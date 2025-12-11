@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kzyrell Dela Paz - Cloud Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --border: #2a2a2a;
+            --success: #10b981;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        /* Creating CSS-only animated stars */
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+
+        .star:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+        .star:nth-child(2) { top: 80%; left: 20%; animation-delay: 1s; }
+        .star:nth-child(3) { top: 40%; left: 30%; animation-delay: 2s; }
+        .star:nth-child(4) { top: 60%; left: 40%; animation-delay: 0.5s; }
+        .star:nth-child(5) { top: 10%; left: 50%; animation-delay: 1.5s; }
+        .star:nth-child(6) { top: 90%; left: 60%; animation-delay: 2.5s; }
+        .star:nth-child(7) { top: 30%; left: 70%; animation-delay: 0.8s; }
+        .star:nth-child(8) { top: 70%; left: 80%; animation-delay: 1.8s; }
+        .star:nth-child(9) { top: 50%; left: 90%; animation-delay: 2.2s; }
+        .star:nth-child(10) { top: 15%; left: 85%; animation-delay: 0.3s; }
+
+        /* Creating CSS-only floating bubbles */
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--accent), transparent);
+            opacity: 0.1;
+            animation: float 15s infinite linear;
+        }
+
+        .bubble:nth-child(11) { width: 20px; height: 20px; left: 5%; animation-delay: 0s; }
+        .bubble:nth-child(12) { width: 15px; height: 15px; left: 25%; animation-delay: 3s; }
+        .bubble:nth-child(13) { width: 25px; height: 25px; left: 45%; animation-delay: 6s; }
+        .bubble:nth-child(14) { width: 18px; height: 18px; left: 65%; animation-delay: 9s; }
+        .bubble:nth-child(15) { width: 22px; height: 22px; left: 85%; animation-delay: 12s; }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.5); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+            10% { opacity: 0.1; }
+            90% { opacity: 0.1; }
+            100% { transform: translateY(-100px) translateX(50px); opacity: 0; }
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        /* Left Panel */
+        .profile-section {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            position: sticky;
+            top: 2rem;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        .name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .title {
+            color: var(--accent);
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .location {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .achievement-badge {
+            background: linear-gradient(135deg, var(--success), #059669);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Right Panel */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .content-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .content-card:nth-child(2) { animation-delay: 0.2s; }
+        .content-card:nth-child(3) { animation-delay: 0.4s; }
+        .content-card:nth-child(4) { animation-delay: 0.6s; }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .about-text {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: var(--bg-primary);
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .experience-item {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .exp-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .exp-org {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .exp-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 1rem;
+            }
+            
+            .profile-section {
+                position: relative;
+                top: 0;
+            }
+        }
+
+        /* CSS-only fade in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+     Animated Background with CSS-only elements 
+    <div class="animated-bg">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="container">
+         Left Panel - Profile 
+        <div class="profile-section">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wXEQ1pO3tytlmdtGYJyl00mUP0AiJh.png" alt="Kzyrell Dela Paz" class="profile-image">
+            
+            <h1 class="name">Kzyrell Dela Paz</h1>
+            <p class="title">Cloud Engineer</p>
+            <p class="location">📍 Metro Manila, Philippines</p>
+            
+            <div class="achievement-badge">
+                🏆 AWS Cloud Club Member
+            </div>
+            
+            <div class="contact-buttons">
+                <a href="mailto:kzyrellyan@gmail.com" class="btn btn-primary">
+                    📧 Send Email
+                </a>
+                <a href="tel:+639974431161" class="btn btn-secondary">
+                    📞 Schedule Call
+                </a>
+                <a href="#" class="btn btn-secondary">
+                    💼 Download Resume
+                </a>
+            </div>
+        </div>
+
+         Right Panel - Content 
+        <div class="content-section">
+             About 
+            <div class="content-card">
+                <h2 class="card-title">👨‍💻 About</h2>
+                <p class="about-text">
+                    Motivated and detail-oriented Computer Engineering student with a strong academic background in cloud infrastructure, virtualization, and networking. Passionate about applying technical expertise and problem-solving abilities to contribute to innovative solutions within dynamic organizations.
+                </p>
+                <p class="about-text">
+                    Currently pursuing my Bachelor's degree at Pamantasan ng Lungsod ng Maynila, with expected graduation in 2026. Actively involved in the AWS Cloud Club as both a member and logistics volunteer, continuously expanding my knowledge in cloud technologies and emerging IT solutions.
+                </p>
+            </div>
+
+             Skills 
+            <div class="content-card">
+                <h2 class="card-title">🛠️ Tech Stack</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">☁️</div>
+                        <div>Cloud Infrastructure</div>
+                    </div>
+                    <div class="skill-item">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">💻</div>
+                        <div>Software Development</div>
+                    </div>
+                    <div class="skill-item">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔧</div>
+                        <div>Problem Solving</div>
+                    </div>
+                    <div class="skill-item">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🌐</div>
+                        <div>Networking</div>
+                    </div>
+                </div>
+            </div>
+
+             Experience 
+            <div class="content-card">
+                <h2 class="card-title">💼 Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="exp-title">AWS Cloud Club Member</div>
+                    <div class="exp-org">Haribon Chapter • 2024 - Present</div>
+                    <div class="exp-desc">Active member participating in cloud technology workshops, seminars, and hands-on training sessions focused on AWS services and cloud architecture.</div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="exp-title">Logistics Volunteer</div>
+                    <div class="exp-org">AWS Cloud Club - Haribon • 2024 - Present</div>
+                    <div class="exp-desc">Supporting event organization and logistics for cloud computing workshops and community outreach programs.</div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="exp-title">Computer Engineering Student</div>
+                    <div class="exp-org">Pamantasan ng Lungsod ng Maynila • 2022 - 2026</div>
+                    <div class="exp-desc">Pursuing Bachelor's degree with focus on cloud infrastructure, software development, and emerging technologies.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
