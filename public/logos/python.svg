@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Python logo">
+  <rect width="120" height="120" rx="16" fill="#306998"/>
+  <path d="M60 16c-9 0-16 7-16 16v10h16v6H32c-9 0-16 7-16 16v14c0 9 7 16 16 16h16v-10c0-9 7-16 16-16h12c9 0 16-7 16-16V48c0-9-7-16-16-16H60V32h12V24c0-9-7-16-16-16Zm-10 6a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" fill="#FFD43B"/>
+  <circle cx="86" cy="82" r="4" fill="#306998"/>
+</svg>
+

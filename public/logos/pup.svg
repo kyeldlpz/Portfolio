@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="PUP logo">
+  <rect width="120" height="120" rx="16" fill="#800000"/>
+  <circle cx="60" cy="60" r="38" fill="#F2D16B" />
+  <path d="M60 26 68 50h26L73 66l8 24-21-15-21 15 8-24-21-16h26l7-24Z" fill="#800000"/>
+</svg>
+

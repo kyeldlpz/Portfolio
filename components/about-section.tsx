@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { GraduationCap, Calendar } from "lucide-react"
 
@@ -34,7 +36,13 @@ export function AboutSection() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <GraduationCap className="w-6 h-6 text-primary mt-1" />
+                      <Image
+                        src="/logos/plm.svg"
+                        alt="Pamantasan ng Lungsod ng Maynila logo"
+                        width={32}
+                        height={32}
+                        className="rounded-sm"
+                      />
                       <div className="space-y-2">
                         <h4 className="font-semibold">Bachelor of Science in Computer Engineering</h4>
                         <p className="text-muted-foreground">Pamantasan ng Lungsod ng Maynila</p>
@@ -50,42 +58,49 @@ export function AboutSection() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <GraduationCap className="w-6 h-6 text-primary mt-1" />
+                      <Image
+                        src="/logos/pup.svg"
+                        alt="Polytechnic University of the Philippines logo"
+                        width={32}
+                        height={32}
+                        className="rounded-sm"
+                      />
                       <div className="space-y-2">
-                        <h4 className="font-semibold">High School Diploma</h4>
+                        <h4 className="font-semibold">Senior High School (STEM)</h4>
+                        <p className="text-muted-foreground">
+                          Polytechnic University of the Philippines — Graduated with Honors
+                        </p>
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <Calendar className="w-4 h-4" />
+                          <span>2020 – 2022</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <Image
+                        src="/logos/ramon.svg"
+                        alt="Ramon Magsaysay High School logo"
+                        width={32}
+                        height={32}
+                        className="rounded-sm"
+                      />
+                      <div className="space-y-2">
+                        <h4 className="font-semibold">Junior High School</h4>
                         <p className="text-muted-foreground">Ramon Magsaysay High School</p>
                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
                           <Calendar className="w-4 h-4" />
-                          <span>2020</span>
+                          <span>2016 – 2020</span>
                         </div>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
               </div>
-            </div>
-          </div>
-
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">Affiliations</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Card>
-                <CardContent className="p-6">
-                  <h4 className="font-semibold text-primary">AWS Cloud Club - Haribon Member</h4>
-                  <p className="text-muted-foreground mt-2">
-                    Active member of the AWS Cloud Club, participating in cloud technology discussions and learning
-                    initiatives.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <h4 className="font-semibold text-primary">AWS Cloud Club - Logistics Volunteer</h4>
-                  <p className="text-muted-foreground mt-2">
-                    Volunteer coordinator helping organize events and workshops for the AWS Cloud Club community.
-                  </p>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>

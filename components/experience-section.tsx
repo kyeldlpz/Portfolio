@@ -20,6 +20,41 @@ export function ExperienceSection() {
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
                   <div className="flex-shrink-0">
                     <div className="p-3 bg-primary/10 rounded-lg">
+                      <Award className="w-8 h-8 text-primary" />
+                    </div>
+                  </div>
+
+                  <div className="flex-grow space-y-4">
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-semibold">Cloud and Infrastructure Associate</h3>
+                      <p className="text-primary font-medium">Infrastructure & Cloud Ops</p>
+                      <div className="flex items-center gap-2 text-muted-foreground">
+                        <Calendar className="w-4 h-4" />
+                        <span>Current</span>
+                      </div>
+                    </div>
+
+                    <p className="text-muted-foreground leading-relaxed">
+                      Supporting cloud environment build-outs, infrastructure monitoring, and reliability tasks while
+                      collaborating with engineers on automation and best practices.
+                    </p>
+
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">Cloud Ops</Badge>
+                      <Badge variant="secondary">Automation</Badge>
+                      <Badge variant="secondary">Monitoring</Badge>
+                      <Badge variant="secondary">Reliability</Badge>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-8">
+                <div className="flex flex-col md:flex-row md:items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="p-3 bg-primary/10 rounded-lg">
                       <Users className="w-8 h-8 text-primary" />
                     </div>
                   </div>
