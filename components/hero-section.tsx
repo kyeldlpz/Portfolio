@@ -69,7 +69,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
                 <img
-                  src="/images/image.png"
+                  src="/images/profile.jpg"
                   alt="Kzyrell Dela Paz"
                   width={320}
                   height={320}
