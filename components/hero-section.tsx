@@ -68,7 +68,12 @@ export function HeroSection() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
-                <a href="/images/image.png" target="_blank" rel="noopener noreferrer">
+                <a 
+                  href="/images/image.png" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block w-full h-full"
+                >
                   <img
                     src="/images/image.png"
                     alt="Kzyrell Dela Paz"
