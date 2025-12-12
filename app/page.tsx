@@ -19,7 +19,7 @@ export default function Home() {
 
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-border">
         <div className="max-w-6xl mx-auto text-center text-muted-foreground">
-          <p>&copy; 2024 Kzyrell Dela Paz. All rights reserved.</p>
+          <p>&copy; 2025 Kzyrell Dela Paz. All rights reserved.</p>
         </div>
       </footer>
     </main>
