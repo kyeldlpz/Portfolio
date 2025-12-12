@@ -37,7 +37,7 @@ export function AboutSection() {
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
                         <img
-                          src="/logos/PLM.svg"
+                          src="/logos/plm.svg"
                           alt="PLM Logo"
                           width={48}
                           height={48}

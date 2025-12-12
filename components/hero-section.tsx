@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Phone } from "lucide-react"
 
@@ -69,13 +68,12 @@ export function HeroSection() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
-                <Image
+                <img
                   src="/images/image.png"
                   alt="Kzyrell Dela Paz"
                   width={320}
                   height={320}
                   className="w-full h-full object-cover"
-                  priority
                 />
               </div>
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-primary/10 rounded-full blur-xl -z-10" />
