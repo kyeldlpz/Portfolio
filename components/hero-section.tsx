@@ -69,13 +69,13 @@ export function HeroSection() {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
                 <a 
-                  href="https://imgur.com/a/32rzsMt" 
+                  href="https://i.imgur.com/VplD70Z.jpeg" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block w-full h-full"
                 >
                   <img
-                    src="https://imgur.com/a/32rzsMt"
+                    src="https://i.imgur.com/VplD70Z.jpeg"
                     alt="Kzyrell Dela Paz"
                     width={320}
                     height={320}
