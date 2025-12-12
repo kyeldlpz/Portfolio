@@ -104,6 +104,6 @@ I'm always open to discussing new opportunities, collaborations, or just having 
 ---
 
 <div align="center">
-  <p>Built with Next.js, TypeScript, and Tailwind CSS</p>
+  <p>Built with Next.js, TypeScript, Html, and CSS</p>
   <p>&copy; 2025 Kzyrell Dela Paz. All rights reserved.</p>
 </div>
