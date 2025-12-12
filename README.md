@@ -1,145 +1,109 @@
-# Portfolio
-My Portfolio
+# Kzyrell Dela Paz - Portfolio
 
-## Deployment Guide (MADE BY CURSOR)
+<div align="center">
+  <h3>Aspiring Cloud Engineer</h3>
+  <p>Computer Engineering Student | Cloud Infrastructure Enthusiast</p>
+</div>
 
-This portfolio is built with Next.js and can be deployed to various platforms. Here are the recommended deployment options:
+---
 
-### Option 1: Vercel (Recommended - Easiest for Next.js)
+## 👋 About Me
 
-#### Step 1: Prepare Your Code for Git
+I'm a passionate Computer Engineering student at Pamantasan ng Lungsod ng Maynila, with an expected graduation in 2026. I'm deeply interested in cloud technologies and infrastructure solutions, and I'm committed to building scalable, secure cloud infrastructure solutions for modern applications.
 
-1. **Initialize Git (if not already done):**
-   ```bash
-   git init
-   ```
+Motivated and detail-oriented, I have a strong foundation in cloud infrastructure, virtualization, and networking. I'm passionate about continuous learning and contributing to innovative solutions in dynamic, growth-oriented organizations.
 
-2. **Add all files:**
-   ```bash
-   git add .
-   ```
+## 🎓 Education
 
-3. **Commit your code:**
-   ```bash
-   git commit -m "Initial commit"
-   ```
+- **Bachelor of Science in Computer Engineering**  
+  Pamantasan ng Lungsod ng Maynila  
+  *Expected Graduation: 2026*
 
-#### Step 2: Push to GitHub
+- **STEM - Science, Technology, Engineering, and Mathematics**  
+  Polytechnic University of the Philippines  
+  *2020-2022*
 
-1. **Create a new repository on GitHub:**
-   - Go to [github.com](https://github.com) and create a new repository
-   - Don't initialize it with a README (you already have one)
+- **High School Diploma**  
+  Ramon Magsaysay High School  
+  *2016-2020*
 
-2. **Connect and push:**
-   
-   **If remote doesn't exist yet:**
-   ```bash
-   git remote add origin <your-github-repo-url>
-   git branch -M main
-   git push -u origin main
-   ```
-   
-   **If remote already exists:**
-   ```bash
-   # Check current remote
-   git remote -v
-   
-   # Update remote URL if needed
-   git remote set-url origin <your-github-repo-url>
-   
-   # If push is rejected, pull and merge first
-   git pull origin main --no-rebase
-   # Resolve any conflicts, then:
-   git add .
-   git commit -m "Merge remote changes"
-   git push origin main
-   ```
+## 💼 Experience & Affiliations
 
-#### Step 3: Deploy to Vercel
+### AWS Cloud Club - Cloud and Infrastructure Associate
+**Current** | Cloud Infrastructure Associate
 
-1. **Go to Vercel:**
-   - Visit [vercel.com](https://vercel.com)
-   - Sign up or log in (use "Continue with GitHub" for easiest setup)
+Specializing in cloud infrastructure and architecture, attending workshops and hands-on training guided by leads and mentors. Focused on AWS Services, Cloud Architecture, and Infrastructure Design.
 
-2. **Import your project:**
-   - Click "Add New..." → "Project"
-   - Find and select your GitHub repository
-   - Click "Import"
+### AWS Cloud Club - Haribon Member
+**Current** | Active Community Member
 
-3. **Configure (usually auto-detected):**
-   - **Framework Preset:** Next.js (auto-detected)
-   - **Root Directory:** `./` (default)
-   - **Build Command:** `npm run build` (auto-detected)
-   - **Output Directory:** `.next` (auto-detected)
-   - **Install Command:** `npm install` (auto-detected)
+Active participant in AWS Cloud Club activities, engaging in cloud technology discussions, workshops, and learning sessions. Contributing to the community's knowledge sharing and collaborative learning environment.
 
-4. **Deploy:**
-   - Click "Deploy"
-   - Wait 1-2 minutes for the build to complete
-   - Your site will be live at: `https://your-project-name.vercel.app`
+### AWS Cloud Club - Logistics Volunteer
+**Current** | Event Coordination & Support
 
-#### Step 4: Custom Domain (Optional)
+Volunteer coordinator responsible for organizing events, workshops, and community activities. Managing logistics, coordinating with speakers, and ensuring smooth execution of educational programs for club members.
 
-1. In your Vercel project dashboard, go to **Settings** → **Domains**
-2. Enter your custom domain
-3. Follow the DNS configuration instructions
-4. Vercel will automatically provision an SSL certificate
+## 🛠️ Skills & Technologies
 
-#### Automatic Deployments
+### Cloud Infrastructure
+- AWS Services
+- Cloud Architecture
+- Virtualization
+- Networking
+- Security
 
-- Every push to `main` branch = automatic production deployment
-- Pull requests = automatic preview deployments
-- All deployments are instant and include:
-  - Automatic HTTPS
-  - Global CDN
-  - Analytics (optional)
+### Software Development
+- HTML
+- CSS
+- Python
+- TypeScript
+- C++
 
-### Option 2: Netlify
+### Tools & Platforms
+- AWS (Amazon Web Services)
+- Google Colab
+- Visual Studio Code
+- Cursor
+- GitHub
 
-1. **Push your code to GitHub** (same as above)
+### Core Competencies
+- **Problem-Solving**: Analytical approach to identifying and resolving complex technical challenges
+- **Software Development**: Building efficient, maintainable applications using modern development practices
+- **Cloud Infrastructure**: Designing and implementing scalable cloud solutions and architectures
 
-2. **Deploy to Netlify:**
-   - Go to [netlify.com](https://netlify.com)
-   - Sign up/Login with your GitHub account
-   - Click "Add new site" → "Import an existing project"
-   - Select your repository
-   - Build settings:
-     - Build command: `npm run build`
-     - Publish directory: `.next`
-   - Click "Deploy site"
+## 📚 Learning & Projects
 
-### Option 3: GitHub Pages (Requires Static Export)
+### Cloud Infrastructure Studies
+Comprehensive study of cloud computing principles, virtualization technologies, and distributed systems architecture through academic coursework and video courses in AWS Skill Builder and AWS Educate.
 
-If you want to use GitHub Pages, you'll need to configure Next.js for static export:
+### Software Development Projects
+Hands-on experience building applications and systems as part of Computer Engineering curriculum. Continuously learning and improving software development skills.
 
-1. Update `next.config.js` (create if it doesn't exist):
-   ```javascript
-   module.exports = {
-     output: 'export',
-     images: {
-       unoptimized: true
-     }
-   }
-   ```
+## 📫 Contact
 
-2. Build and deploy:
-   ```bash
-   npm run build
-   # The output will be in the 'out' directory
-   ```
+- **Email**: [kzyrellyan@gmail.com](mailto:kzyrellyan@gmail.com)
+- **Phone**: [+63 997 443 1161](tel:+639974431161)
+- **Location**: 1434 Crisostomo Street, Sampaloc, Manila
+- **LinkedIn**: [kzyrell-dela-paz-b04395351](https://www.linkedin.com/in/kzyrell-dela-paz-b04395351/)
+- **GitHub**: [@kyeldlpz](https://github.com/kyeldlpz)
 
-### Local Development
+## 🌐 Portfolio
 
-```bash
-npm install
-npm run dev
-```
+Visit my live portfolio website to see my projects and learn more about my work.
 
-Open [http://localhost:3000](http://localhost:3000) to view your portfolio.
+## 🚀 What I'm Looking For
 
-### Build for Production
+- Cloud Engineering Internships
+- Software Development Opportunities
+- Technical Mentorship
+- Collaborative Projects
 
-```bash
-npm run build
-npm start
-```
+I'm always open to discussing new opportunities, collaborations, or just having a conversation about cloud technologies. Feel free to reach out!
+
+---
+
+<div align="center">
+  <p>Built with Next.js, TypeScript, and Tailwind CSS</p>
+  <p>&copy; 2024 Kzyrell Dela Paz. All rights reserved.</p>
+</div>
