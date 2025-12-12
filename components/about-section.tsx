@@ -39,8 +39,10 @@ export function AboutSection() {
                         <Image
                           src="/logos/PLM.svg"
                           alt="PLM Logo"
-                          fill
+                          width={48}
+                          height={48}
                           className="object-contain"
+                          unoptimized
                         />
                       </div>
                       <div className="space-y-2">

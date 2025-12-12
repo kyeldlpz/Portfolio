@@ -34,9 +34,11 @@ export function Navigation() {
               <Image
                 src="/logos/portfolio.png"
                 alt="Portfolio Logo"
-                fill
+                width={40}
+                height={40}
                 className="object-contain"
                 priority
+                unoptimized
               />
             </div>
             <span className="font-bold text-xl hidden sm:inline">Kzyrell Dela Paz</span>
