@@ -68,20 +68,14 @@ export function HeroSection() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
-                <a 
-                  href="https://i.imgur.com/VplD70Z.jpeg" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block w-full h-full"
-                >
-                  <img
-                    src="https://i.imgur.com/VplD70Z.jpeg"
-                    alt="Kzyrell Dela Paz"
-                    width={320}
-                    height={320}
-                    className="w-full h-full object-cover hover:opacity-90 transition-opacity cursor-pointer"
-                  />
-                </a>
+                <img
+                  src="/images/image.png"
+                  alt="Kzyrell Dela Paz"
+                  width={320}
+                  height={320}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-primary/10 rounded-full blur-xl -z-10" />
             </div>
