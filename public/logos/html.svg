@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="HTML logo">
-  <rect width="120" height="120" rx="16" fill="#E34F26"/>
-  <path d="M30 20h60l-6 68-24 8-24-8-6-68Z" fill="#fff" opacity=".9"/>
-  <path d="M36 28h48l-4.5 52L60 86l-19.5-6L36 28Zm9 14 1 10h29l-1 10-10 3-10-3-.5-5h-9l1.5 17L60 78l14-4 2-22H46l-1-9h30l.5-5H45Z" fill="#E34F26"/>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"/>
+<path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"/>
+<path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"/>
 </svg>
-

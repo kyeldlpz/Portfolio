@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="C++ logo">
-  <rect width="120" height="120" rx="16" fill="#1E5CB3"/>
-  <path d="M27 38c0-3 2-6 5-8l24-14c3-2 7-2 10 0l24 14c3 2 5 5 5 8v44c0 3-2 6-5 8l-24 14c-3 2-7 2-10 0L32 90c-3-2-5-5-5-8V38Z" fill="#2B74D0"/>
-  <path d="M77 60a17 17 0 1 1-34 0 17 17 0 0 1 34 0Z" fill="#fff"/>
-  <path d="M70 60a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z" fill="#2B74D0"/>
-  <path d="M78 52h6v4h-6v-4Zm0 8h6v4h-6v-4Zm-10-8h6v4h-6v-4Zm0 8h6v4h-6v-4Z" fill="#fff"/>
-</svg>
-
