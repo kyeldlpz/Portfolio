@@ -31,10 +31,28 @@ This portfolio is built with Next.js and can be deployed to various platforms. H
    - Don't initialize it with a README (you already have one)
 
 2. **Connect and push:**
+   
+   **If remote doesn't exist yet:**
    ```bash
    git remote add origin <your-github-repo-url>
    git branch -M main
    git push -u origin main
+   ```
+   
+   **If remote already exists:**
+   ```bash
+   # Check current remote
+   git remote -v
+   
+   # Update remote URL if needed
+   git remote set-url origin <your-github-repo-url>
+   
+   # If push is rejected, pull and merge first
+   git pull origin main --no-rebase
+   # Resolve any conflicts, then:
+   git add .
+   git commit -m "Merge remote changes"
+   git push origin main
    ```
 
 #### Step 3: Deploy to Vercel
