@@ -9,6 +9,11 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   const scrollToSection = (id: string) => {
+    if (id === "") {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+      setIsOpen(false)
+      return
+    }
     const element = document.getElementById(id)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
@@ -20,7 +25,12 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="font-bold text-xl">Kzyrell Dela Paz</div>
+          <button
+            onClick={() => scrollToSection("")}
+            className="font-bold text-xl hover:text-primary transition-colors cursor-pointer"
+          >
+            Kzyrell Dela Paz
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

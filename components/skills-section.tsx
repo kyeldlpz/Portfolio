@@ -8,12 +8,12 @@ export function SkillsSection() {
       title: "Cloud Infrastructure",
       icon: Cloud,
       skills: ["AWS Services", "Cloud Architecture", "Virtualization", "Networking", "Security"],
-      description: "Building scalable and secure cloud solutions",
+      description: "Currently learning cloud architecture and infrastructure design",
     },
     {
       title: "Software Development",
       icon: Code,
-      skills: ["Python", "JavaScript", "React", "Node.js", "Database Design"],
+      skills: ["HTML", "CSS", "Python", "TypeScript", "JavaScript"],
       description: "Creating robust applications and systems",
     },
     {
@@ -39,7 +39,7 @@ export function SkillsSection() {
             {skillCategories.map((category, index) => {
               const IconComponent = category.icon
               return (
-                <Card key={index} className="h-full">
+                <Card key={index} className="h-full hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-6 space-y-4">
                     <div className="flex items-center gap-3">
                       <div className="p-2 bg-primary/10 rounded-lg">
@@ -66,7 +66,7 @@ export function SkillsSection() {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-center">Core Competencies</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card>
+              <Card className="hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6 text-center space-y-3">
                   <h4 className="font-semibold text-primary">Problem-Solving</h4>
                   <p className="text-muted-foreground text-sm">
@@ -74,7 +74,7 @@ export function SkillsSection() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6 text-center space-y-3">
                   <h4 className="font-semibold text-primary">Software Development</h4>
                   <p className="text-muted-foreground text-sm">
@@ -82,7 +82,7 @@ export function SkillsSection() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6 text-center space-y-3">
                   <h4 className="font-semibold text-primary">Cloud Infrastructure</h4>
                   <p className="text-muted-foreground text-sm">

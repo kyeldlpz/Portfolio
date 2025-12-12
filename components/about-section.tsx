@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { GraduationCap, Calendar } from "lucide-react"
+import Image from "next/image"
 
 export function AboutSection() {
   return (
@@ -31,10 +32,17 @@ export function AboutSection() {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">Education</h3>
               <div className="space-y-4">
-                <Card>
+                <Card className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <GraduationCap className="w-6 h-6 text-primary mt-1" />
+                      <div className="flex-shrink-0 w-12 h-12 relative">
+                        <Image
+                          src="/logos/PLM.svg"
+                          alt="PLM Logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                       <div className="space-y-2">
                         <h4 className="font-semibold">Bachelor of Science in Computer Engineering</h4>
                         <p className="text-muted-foreground">Pamantasan ng Lungsod ng Maynila</p>
@@ -47,10 +55,40 @@ export function AboutSection() {
                   </CardContent>
                 </Card>
 
-                <Card>
+                <Card className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <GraduationCap className="w-6 h-6 text-primary mt-1" />
+                      <div className="flex-shrink-0 w-12 h-12 relative">
+                        <Image
+                          src="/logos/pup.svg"
+                          alt="PUP Logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <h4 className="font-semibold">STEM - Science, Technology, Engineering, and Mathematics</h4>
+                        <p className="text-muted-foreground">Polytechnic University of the Philippines</p>
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <Calendar className="w-4 h-4" />
+                          <span>2020-2022</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 relative">
+                        <Image
+                          src="/logos/ramon.svg"
+                          alt="Ramon Magsaysay Logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                       <div className="space-y-2">
                         <h4 className="font-semibold">High School Diploma</h4>
                         <p className="text-muted-foreground">Ramon Magsaysay High School</p>
@@ -67,23 +105,74 @@ export function AboutSection() {
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">Affiliations</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Card>
-                <CardContent className="p-6">
-                  <h4 className="font-semibold text-primary">AWS Cloud Club - Haribon Member</h4>
-                  <p className="text-muted-foreground mt-2">
-                    Active member of the AWS Cloud Club, participating in cloud technology discussions and learning
-                    initiatives.
-                  </p>
+            <h3 className="text-2xl font-semibold">Tech Stack</h3>
+            <p className="text-muted-foreground">
+              Technologies and tools I'm currently learning and working with.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="w-16 h-16 relative">
+                    <Image
+                      src="/logos/aws.svg"
+                      alt="AWS"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-center">AWS</p>
                 </CardContent>
               </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <h4 className="font-semibold text-primary">AWS Cloud Club - Logistics Volunteer</h4>
-                  <p className="text-muted-foreground mt-2">
-                    Volunteer coordinator helping organize events and workshops for the AWS Cloud Club community.
-                  </p>
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="w-16 h-16 relative">
+                    <Image
+                      src="/logos/colab.svg"
+                      alt="Google Colab"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-center">Google Colab</p>
+                </CardContent>
+              </Card>
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="w-16 h-16 relative">
+                    <Image
+                      src="/logos/github.svg"
+                      alt="GitHub"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-center">GitHub</p>
+                </CardContent>
+              </Card>
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="w-16 h-16 relative">
+                    <Image
+                      src="/logos/html.svg"
+                      alt="HTML"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-center">HTML</p>
+                </CardContent>
+              </Card>
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="w-16 h-16 relative">
+                    <Image
+                      src="/logos/css.svg"
+                      alt="CSS"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-center">CSS</p>
                 </CardContent>
               </Card>
             </div>

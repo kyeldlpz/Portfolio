@@ -20,7 +20,7 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance">Kzyrell Dela Paz</h1>
-              <h2 className="text-xl sm:text-2xl text-primary font-medium">Cloud Engineer</h2>
+              <h2 className="text-xl sm:text-2xl text-primary font-medium">Aspiring Cloud Engineer</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I build scalable, secure cloud infrastructure solutions for modern applications.
               </p>
@@ -53,12 +53,12 @@ export function HeroSection() {
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <a href="#" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/kzyrell-dela-paz-b04395351/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="w-5 h-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <a href="#" aria-label="GitHub">
+                <a href="https://github.com/kyeldlpz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="w-5 h-5" />
                 </a>
               </Button>
@@ -70,7 +70,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
                 <Image
-                  src="/images/profile.png"
+                  src="/images/image.png"
                   alt="Kzyrell Dela Paz"
                   width={320}
                   height={320}

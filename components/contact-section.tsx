@@ -85,12 +85,12 @@ export function ContactSection() {
                     </a>
                   </Button>
                   <Button variant="outline" size="icon" asChild>
-                    <a href="#" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/kzyrell-dela-paz-b04395351/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                       <Linkedin className="w-5 h-5" />
                     </a>
                   </Button>
                   <Button variant="outline" size="icon" asChild>
-                    <a href="#" aria-label="GitHub">
+                    <a href="https://github.com/kyeldlpz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                       <Github className="w-5 h-5" />
                     </a>
                   </Button>

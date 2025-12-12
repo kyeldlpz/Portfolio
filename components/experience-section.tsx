@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Users, Award } from "lucide-react"
+import Image from "next/image"
 
 export function ExperienceSection() {
   return (
@@ -8,19 +9,69 @@ export function ExperienceSection() {
       <div className="max-w-6xl mx-auto">
         <div className="space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold">Experience & Involvement</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold">Affiliations and Organizations</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               My journey in cloud technologies and community involvement.
             </p>
           </div>
 
           <div className="space-y-8">
-            <Card>
+            <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
                   <div className="flex-shrink-0">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <Users className="w-8 h-8 text-primary" />
+                    <div className="p-3 bg-primary/10 rounded-lg w-16 h-16 flex items-center justify-center">
+                      <div className="w-10 h-10 relative">
+                        <Image
+                          src="/logos/cloudclub.svg"
+                          alt="AWS Cloud Club"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex-grow space-y-4">
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-semibold">AWS Cloud Club - Cloud and Infrastructure Associate</h3>
+                      <p className="text-primary font-medium">Cloud Infrastructure Specialist</p>
+                      <div className="flex items-center gap-2 text-muted-foreground">
+                        <Calendar className="w-4 h-4" />
+                        <span>Current</span>
+                      </div>
+                    </div>
+
+                    <p className="text-muted-foreground leading-relaxed">
+                      Specializing in cloud infrastructure and architecture, working on AWS services, cloud solutions design,
+                      and infrastructure optimization. Contributing to technical projects and knowledge sharing within the
+                      community.
+                    </p>
+
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">AWS Services</Badge>
+                      <Badge variant="secondary">Cloud Architecture</Badge>
+                      <Badge variant="secondary">Infrastructure Design</Badge>
+                      <Badge variant="secondary">Technical Leadership</Badge>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="flex flex-col md:flex-row md:items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="p-3 bg-primary/10 rounded-lg w-16 h-16 flex items-center justify-center">
+                      <div className="w-10 h-10 relative">
+                        <Image
+                          src="/logos/cloudclub.svg"
+                          alt="AWS Cloud Club"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -51,12 +102,19 @@ export function ExperienceSection() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
                   <div className="flex-shrink-0">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <Award className="w-8 h-8 text-primary" />
+                    <div className="p-3 bg-primary/10 rounded-lg w-16 h-16 flex items-center justify-center">
+                      <div className="w-10 h-10 relative">
+                        <Image
+                          src="/logos/cloudclub.svg"
+                          alt="AWS Cloud Club"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                     </div>
                   </div>
 
