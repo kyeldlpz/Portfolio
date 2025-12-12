@@ -29,15 +29,6 @@ export function Navigation() {
             onClick={() => scrollToSection("")}
             className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer"
           >
-            <div className="relative w-10 h-10 flex items-center justify-center">
-              <img
-                src="/logos/portfolio.png"
-                alt="Portfolio Logo"
-                width={40}
-                height={40}
-                className="object-contain w-10 h-10"
-              />
-            </div>
             <span className="font-bold text-xl hidden sm:inline">Kzyrell Dela Paz</span>
           </button>
 
