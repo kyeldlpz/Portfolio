@@ -35,14 +35,13 @@ export function AboutSection() {
                 <Card className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 relative">
-                        <Image
+                      <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                        <img
                           src="/logos/PLM.svg"
                           alt="PLM Logo"
                           width={48}
                           height={48}
-                          className="object-contain"
-                          unoptimized
+                          className="object-contain w-12 h-12"
                         />
                       </div>
                       <div className="space-y-2">
