@@ -10,7 +10,7 @@ export function AboutSection() {
           <div className="text-center space-y-4">
             <h2 className="text-3xl sm:text-4xl font-bold">About Me</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A passionate Computer Engineering student specializing in cloud technologies and infrastructure solutions.
+              A passionate Computer Engineering student that wants to specialize in cloud technologies and infrastructure solutions.
             </p>
           </div>
 
@@ -19,11 +19,11 @@ export function AboutSection() {
               <h3 className="text-2xl font-semibold">Background</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Currently pursuing a Bachelor of Science in Computer Engineering at Pamantasan ng Lungsod ng Maynila,
-                with an expected graduation in 2026. I have a strong academic foundation and practical experience in
+                with an expected graduation in 2026. I have a strong academic foundation and currently exploring and learning
                 cloud infrastructure, virtualization, and networking technologies.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                My passion lies in developing scalable cloud solutions and staying current with emerging technologies in
+                My passion lies in exploring the development of scalable cloud solutions and staying current with emerging technologies in
                 the rapidly evolving IT landscape. I'm committed to continuous learning and contributing to innovative
                 projects that make a real impact.
               </p>
@@ -94,7 +94,7 @@ export function AboutSection() {
                         <p className="text-muted-foreground">Ramon Magsaysay High School</p>
                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
                           <Calendar className="w-4 h-4" />
-                          <span>2020</span>
+                          <span>2016-2020</span>
                         </div>
                       </div>
                     </div>

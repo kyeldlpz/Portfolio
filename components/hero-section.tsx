@@ -22,7 +22,7 @@ export function HeroSection() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance">Kzyrell Dela Paz</h1>
               <h2 className="text-xl sm:text-2xl text-primary font-medium">Aspiring Cloud Engineer</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I build scalable, secure cloud infrastructure solutions for modern applications.
+                I wanna explore and build scalable, secure cloud infrastructure solutions for modern applications.
               </p>
             </div>
 

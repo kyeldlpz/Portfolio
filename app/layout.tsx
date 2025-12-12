@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     "Portfolio of Kzyrell Dela Paz, a Computer Engineering student specializing in cloud infrastructure and software development.",
   keywords: ["Cloud Engineer", "Computer Engineering", "AWS", "Portfolio", "Software Development"],
   authors: [{ name: "Kzyrell Dela Paz" }],
+  icons: {
+    icon: "/logos/portfolio.png",
+    apple: "/logos/portfolio.png",
+  },
   openGraph: {
     title: "Kzyrell Dela Paz - Cloud Engineer Portfolio",
     description:
@@ -30,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} antialiased`} suppressHydrationWarning>
-      <body>
+      <body suppressHydrationWarning>
         <Providers>{children}</Providers>
       </body>
     </html>

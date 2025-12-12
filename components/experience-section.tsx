@@ -35,7 +35,7 @@ export function ExperienceSection() {
                   <div className="flex-grow space-y-4">
                     <div className="space-y-2">
                       <h3 className="text-xl font-semibold">AWS Cloud Club - Cloud and Infrastructure Associate</h3>
-                      <p className="text-primary font-medium">Cloud Infrastructure Specialist</p>
+                      <p className="text-primary font-medium">Cloud Infrastructure Associate</p>
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <Calendar className="w-4 h-4" />
                         <span>Current</span>
@@ -43,16 +43,13 @@ export function ExperienceSection() {
                     </div>
 
                     <p className="text-muted-foreground leading-relaxed">
-                      Specializing in cloud infrastructure and architecture, working on AWS services, cloud solutions design,
-                      and infrastructure optimization. Contributing to technical projects and knowledge sharing within the
-                      community.
+                      Specializing in cloud infrastructure and architecture, attending workshops and training by by hands-on that is guided by leads and mentors.
                     </p>
 
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary">AWS Services</Badge>
                       <Badge variant="secondary">Cloud Architecture</Badge>
                       <Badge variant="secondary">Infrastructure Design</Badge>
-                      <Badge variant="secondary">Technical Leadership</Badge>
                     </div>
                   </div>
                 </div>
@@ -154,7 +151,7 @@ export function ExperienceSection() {
                   <h4 className="font-semibold text-primary">Cloud Infrastructure Studies</h4>
                   <p className="text-muted-foreground text-sm">
                     Comprehensive study of cloud computing principles, virtualization technologies, and distributed
-                    systems architecture through academic coursework.
+                    systems architecture through academic coursework through video courses in AWS Skill Builder and AWS Educate.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="outline" className="text-xs">
@@ -166,6 +163,12 @@ export function ExperienceSection() {
                     <Badge variant="outline" className="text-xs">
                       Security
                     </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Cloud Computing
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Amazon Web Services (AWS)
+                    </Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -175,7 +178,7 @@ export function ExperienceSection() {
                   <h4 className="font-semibold text-primary">Software Development Projects</h4>
                   <p className="text-muted-foreground text-sm">
                     Hands-on experience building applications and systems as part of Computer Engineering curriculum,
-                    focusing on practical problem-solving.
+                    Honestly, not really an expert when it comes to software development but I'm trying to learn and improve my skills.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="outline" className="text-xs">

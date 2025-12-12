@@ -13,7 +13,7 @@ export function SkillsSection() {
     {
       title: "Software Development",
       icon: Code,
-      skills: ["HTML", "CSS", "Python", "TypeScript", "JavaScript"],
+      skills: ["HTML", "CSS", "Python", "TypeScript"],
       description: "Creating robust applications and systems",
     },
     {

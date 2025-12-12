@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { ThemeToggle } from "./theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
@@ -27,9 +28,18 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <button
             onClick={() => scrollToSection("")}
-            className="font-bold text-xl hover:text-primary transition-colors cursor-pointer"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer"
           >
-            Kzyrell Dela Paz
+            <div className="relative w-10 h-10">
+              <Image
+                src="/logos/portfolio.png"
+                alt="Portfolio Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            <span className="font-bold text-xl hidden sm:inline">Kzyrell Dela Paz</span>
           </button>
 
           {/* Desktop Navigation */}
