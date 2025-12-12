@@ -36,13 +36,15 @@ export function AboutSection() {
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-                        <img
-                          src="/logos/plm.svg"
-                          alt="PLM Logo"
-                          width={48}
-                          height={48}
-                          className="object-contain w-12 h-12"
-                        />
+                        <a href="/logos/plm.svg" target="_blank" rel="noopener noreferrer">
+                          <img
+                            src="/logos/plm.svg"
+                            alt="PLM Logo"
+                            width={48}
+                            height={48}
+                            className="object-contain w-12 h-12 hover:opacity-80 transition-opacity cursor-pointer"
+                          />
+                        </a>
                       </div>
                       <div className="space-y-2">
                         <h4 className="font-semibold">Bachelor of Science in Computer Engineering</h4>
