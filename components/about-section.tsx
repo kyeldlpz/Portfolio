@@ -140,6 +140,32 @@ export function AboutSection() {
                 <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
                   <div className="w-16 h-16 relative">
                     <Image
+                      src="/logos/vscode.svg"
+                      alt="vscode"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-center">Visual Studio Code</p>
+                </CardContent>
+              </Card>
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="w-16 h-16 relative">
+                    <Image
+                      src="/logos/cursor.svg"
+                      alt="cursor"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-center">Cursor</p>
+                </CardContent>
+              </Card>
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="w-16 h-16 relative">
+                    <Image
                       src="/logos/github.svg"
                       alt="GitHub"
                       fill
@@ -173,6 +199,45 @@ export function AboutSection() {
                     />
                   </div>
                   <p className="text-sm font-medium text-center">CSS</p>
+                </CardContent>
+              </Card>
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="w-16 h-16 relative">
+                    <Image
+                      src="/logos/python.svg"
+                      alt="python"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-center">Python</p>
+                </CardContent>
+              </Card>
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="w-16 h-16 relative">
+                    <Image
+                      src="/logos/typescript.svg"
+                      alt="Typescript"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-center">TypeScript</p>
+                </CardContent>
+              </Card>
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="w-16 h-16 relative">
+                    <Image
+                      src="/logos/c++.svg"
+                      alt="c++"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-center">C++</p>
                 </CardContent>
               </Card>
             </div>
