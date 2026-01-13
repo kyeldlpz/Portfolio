@@ -24,6 +24,11 @@
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
     --radius: 10px;
+    /* Vibrant accent colors */
+    --accent-1: 250 95% 60%;
+    --accent-2: 270 100% 55%;
+    --accent-3: 190 95% 50%;
+    --accent-glow: 250 95% 65%;
   }
 
   .dark {
@@ -46,6 +51,11 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+    /* Vibrant accent colors for dark mode */
+    --accent-1: 250 95% 65%;
+    --accent-2: 270 100% 60%;
+    --accent-3: 190 100% 55%;
+    --accent-glow: 250 95% 70%;
   }
 
   * {

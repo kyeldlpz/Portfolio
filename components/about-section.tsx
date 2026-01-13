@@ -1,21 +1,52 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { GraduationCap, Calendar } from "lucide-react"
 import Image from "next/image"
+import { useRef, useEffect, useState } from "react"
 
 export function AboutSection() {
+  const ref = useRef<HTMLDivElement>(null)
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+          observer.unobserve(entry.target)
+        }
+      },
+      { threshold: 0.1 }
+    )
+
+    if (ref.current) {
+      observer.observe(ref.current)
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current)
+      }
+    }
+  }, [])
+
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section ref={ref} id="about" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold">About Me</h2>
+          <div className={`text-center space-y-4 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+            <h2 className="text-4xl sm:text-5xl font-bold">
+              <span className="block">About</span>
+              <span className="block gradient-text-primary">Me</span>
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A passionate Computer Engineering student that wants to specialize in cloud technologies and infrastructure solutions.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="space-y-6">
+            <div className={`space-y-6 transition-all duration-1000 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`} style={{ transitionDelay: isVisible ? "200ms" : "0ms" }}>
               <h3 className="text-2xl font-semibold">Background</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Currently pursuing a Bachelor of Science in Computer Engineering at Pamantasan ng Lungsod ng Maynila,
@@ -29,10 +60,10 @@ export function AboutSection() {
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className={`space-y-6 transition-all duration-1000 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`} style={{ transitionDelay: isVisible ? "200ms" : "0ms" }}>
               <h3 className="text-2xl font-semibold">Education</h3>
               <div className="space-y-4">
-                <Card className="hover:shadow-lg transition-shadow duration-300">
+                <Card className="hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 bg-card/50 backdrop-blur border-border/50">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
@@ -42,7 +73,7 @@ export function AboutSection() {
                             alt="PLM Logo"
                             width={48}
                             height={48}
-                            className="object-contain w-12 h-12 hover:opacity-80 transition-opacity cursor-pointer"
+                            className="object-contain w-12 h-12 hover:opacity-80 hover:scale-110 transition-all cursor-pointer"
                           />
                         </a>
                       </div>
@@ -58,7 +89,7 @@ export function AboutSection() {
                   </CardContent>
                 </Card>
 
-                <Card className="hover:shadow-lg transition-shadow duration-300">
+                <Card className="hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 bg-card/50 backdrop-blur border-border/50">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-12 h-12 relative">
@@ -66,7 +97,7 @@ export function AboutSection() {
                           src="/logos/pup.svg"
                           alt="PUP Logo"
                           fill
-                          className="object-contain"
+                          className="object-contain hover:scale-110 transition-transform"
                         />
                       </div>
                       <div className="space-y-2">
@@ -81,7 +112,7 @@ export function AboutSection() {
                   </CardContent>
                 </Card>
 
-                <Card className="hover:shadow-lg transition-shadow duration-300">
+                <Card className="hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 bg-card/50 backdrop-blur border-border/50">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-12 h-12 relative">
@@ -89,7 +120,7 @@ export function AboutSection() {
                           src="/logos/ramon.svg"
                           alt="Ramon Magsaysay Logo"
                           fill
-                          className="object-contain"
+                          className="object-contain hover:scale-110 transition-transform"
                         />
                       </div>
                       <div className="space-y-2">
